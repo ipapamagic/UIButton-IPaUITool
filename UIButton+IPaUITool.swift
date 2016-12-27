@@ -10,7 +10,7 @@ import UIKit
 
 extension UIButton
 {
-    func centerImageUpTitleDown(_ space:CGFloat) {
+    open func centerImageUpTitleDown(_ space:CGFloat) {
         guard let imageView = imageView,let image = imageView.image,let titleLabel = titleLabel,let titleText = titleLabel.text else {
             return
         }
@@ -24,7 +24,7 @@ extension UIButton
         imageEdgeInsets = UIEdgeInsetsMake(
         -(titleSize.height + space), 0.0, 0.0, -titleSize.width)
     }
-    func imageAlignRight(_ space:CGFloat) {
+    open func imageAlignRight(_ space:CGFloat) {
         guard let imageView = imageView,let titleLabel = titleLabel else {
             return
         }
